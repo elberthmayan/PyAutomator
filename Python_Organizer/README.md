@@ -1,130 +1,95 @@
-🐍 Python Organizer – Automation Hub
+# 🐍 Python Organizer -- Automation Hub
 
-Um aplicativo desktop em Python + CustomTkinter para organizar arquivos automaticamente e limpar arquivos temporários do sistema, com interface moderna e suporte a execução automática no Windows.
+Um projeto em Python que une vários **scripts de automação** em uma
+única aplicação com **interface gráfica (GUI)**, facilitando tarefas
+comuns como organização de arquivos e limpeza do sistema.
 
-🚀 Funcionalidades
-📂 Organizador de Arquivos
+------------------------------------------------------------------------
 
-Organiza arquivos por categoria:
+## 🚀 Sobre o Projeto
 
-Imagens
+Este programa é uma **junção de scripts automatizados** integrados em
+uma interface gráfica moderna usando **CustomTkinter**.\
+O objetivo é tornar tarefas repetitivas mais simples, rápidas e
+acessíveis para qualquer usuário.
 
-Documentos
+------------------------------------------------------------------------
 
-Vídeos
+## ✨ Funcionalidades
 
-Músicas
+### 📂 Organização de Arquivos
 
-Códigos
+-   Organiza arquivos automaticamente por categoria:
+    -   Imagens
+    -   Documentos
+    -   Vídeos
+    -   Músicas
+    -   Códigos
+    -   Executáveis
+    -   Compactados
+-   Cria pastas por data de modificação
+-   Gera relatório de organização
 
-Executáveis
+### 🧹 Limpeza de Sistema
 
-Compactados
+-   Remove arquivos temporários:
+    -   %TEMP%
+    -   Cache do Windows
+    -   Prefetch
+    -   Cache de navegadores (Chrome e Edge)
+-   Exibe espaço liberado no disco
 
-Cria subpastas por data de modificação
+### ⚙️ Automação
 
-Gera relatório automático da organização
+-   Pode iniciar automaticamente com o Windows
+-   Scripts .bat gerados automaticamente
 
-Pode ser usado em:
+------------------------------------------------------------------------
 
-Qualquer pasta
+## 🖥️ Interface
 
-Pasta Downloads automaticamente
+-   Interface gráfica moderna
+-   Tema escuro/claro
+-   Log em tempo real
+-   Construída com CustomTkinter
 
-🧹 Limpeza de Sistema
+------------------------------------------------------------------------
 
-Remove:
+## 🛠️ Tecnologias
 
-Arquivos temporários do usuário (%TEMP%)
+-   Python 3
+-   CustomTkinter
+-   Tkinter
+-   OS / Shutil / Pathlib
+-   Threading
 
-Cache do Windows (modo administrador)
+------------------------------------------------------------------------
 
-Prefetch
+## 📥 Instalação
 
-Cache do Chrome e Edge
-
-Mostra:
-
-Quantidade de arquivos removidos
-
-Espaço em disco recuperado (MB)
-
-⚙️ Automação
-
-Opção para:
-
-Iniciar organizador com o Windows
-
-Iniciar limpador com o Windows
-
-Cria scripts .bat automaticamente na pasta de inicialização
-
-🖥️ Interface
-
-Tema escuro/claro
-
-Sidebar moderna
-
-Log em tempo real
-
-Interface feita com CustomTkinter
-
-📦 Tecnologias Usadas
-
-Python 3
-
-CustomTkinter
-
-Tkinter
-
-Threading
-
-OS / Shutil / Pathlib
-
-📥 Instalação
-1️⃣ Clone o repositório
-git clone https://github.com/seu-usuario/python-organizer.git
-
-2️⃣ Instale as dependências
+``` bash
 pip install customtkinter
-
-3️⃣ Execute
 python main.py
+```
 
+------------------------------------------------------------------------
 
-(ou o nome do seu arquivo .py)
+## 🎯 Objetivo
 
-📝 Estrutura de Organização
+Projeto desenvolvido para: - Praticar automação em Python - Aprender
+criação de interfaces gráficas - Integrar vários scripts em um único
+sistema - Aumentar produtividade no dia a dia
 
-Os arquivos são movidos para:
+------------------------------------------------------------------------
 
-PastaEscolhida/
- ├── Imagens/
- │    └── 2026-02-08/
- ├── Documentos/
- ├── Videos/
- ├── Codigos/
- └── Outros/
+## 👨‍💻 Autor
 
-🔐 Permissões
+Elberth\
+Estudante de TI\
+Brasil 🇧🇷
 
-Para limpeza avançada (Windows Temp, Prefetch, cache de navegador):
+------------------------------------------------------------------------
 
-O programa solicita execução como Administrador
+## 📄 Licença
 
-📄 Relatório
-
-Após organizar arquivos, é criado automaticamente:
-
-Relatorio_Organizacao_YYYYMMDD_HHMMSS.txt
-
-
-Com:
-
-Data
-
-Pasta analisada
-
-Arquivos movidos
-
-Erros (se houver)
+Uso livre para fins educacionais.

@@ -75,13 +75,4 @@ python main.py
 - Linux
 - macOS (não testado)
 
----
 
-## 👨‍💻 Autor
-Projeto desenvolvido por Seu Nome Aqui  
-Estudante de TI
-
----
-
-## 📄 Licença
-Uso livre para fins educacionais.

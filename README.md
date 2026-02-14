@@ -1,99 +1,87 @@
-#  Windows Automation
+# 🚀 PyAutomator – System Tool
 
-Um conjunto de ferramentas inteligentes desenvolvidas em **Python** e
-**Batch** para automatizar a manutenção do Windows, organizar ficheiros
-e facilitar a criação de executáveis.
+PyAutomator é uma aplicação desktop desenvolvida em **Python** com interface moderna usando **CustomTkinter**, focada em automação e organização do sistema.
 
-------------------------------------------------------------------------
+O objetivo do projeto é facilitar tarefas comuns do dia a dia, como:
+- Organizar arquivos
+- Limpar arquivos temporários
+- Renomear arquivos em massa
+- Agendar desligamento ou reinício do computador
 
-## 🛠️ Funcionalidades
+---
 
-### 🧹 Faxina Automática (`limpeza.py`)
+## 🖥️ Funcionalidades
 
-Script para remover ficheiros temporários e lixo do sistema.
+### 📂 Organizador de Arquivos
+- Organiza arquivos automaticamente por:
+  - Tipo (Imagens, Docs, Apps, Zips, Mídia, Outros)
+  - Data (Ano-Mês)
+- Pode ser configurado para iniciar junto com o sistema.
 
-**Inclui:** - Limpeza de `%TEMP%`, `C:\Windows\Temp`, `Prefetch` e
-ficheiros recentes. - Limpeza de cache dos browsers: Chrome, Edge, Opera
-e Brave. - Opção de auto-instalação na inicialização do Windows. -
-Execução automática a cada arranque do sistema.
+### 🧹 Limpeza de Sistema
+- Remove arquivos temporários do sistema:
+  - Windows: pasta TEMP
+  - Linux: /tmp
+- Também pode ser configurado para iniciar automaticamente.
 
-------------------------------------------------------------------------
+### ✏️ Renomeador em Massa
+- Permite renomear vários arquivos de uma pasta de uma vez
+- Exemplo:
+  Foto_1.jpg
+  Foto_2.jpg
+  Foto_3.jpg
 
-### 📂 Organizador de Downloads (`organiza_downloads.py`)
+### ⚡ Controle de Energia
+- Permite:
+  - Agendar desligamento
+  - Agendar reinício
+- Pode ser configurado por:
+  - Cronômetro (30 min, 1h, 2h ou personalizado)
+  - Horário fixo (ex: 23:30)
+- Possui contador regressivo na tela
 
-Organiza automaticamente os ficheiros da pasta Downloads.
+---
 
-**Recursos:** - Separação por categorias: Imagens, Vídeos, Áudio,
-Documentos, Instaladores, Compactados e Código. - Criação automática de
-subpastas por data (Ano-Mês). - Sistema anti-conflito de nomes. - Pode
-ser convertido para `.pyw` para rodar em segundo plano.
+## 🧠 Recursos Extras
+- Interface moderna estilo cyber/dark
+- Sistema de Auto Start (iniciar junto com o Windows ou Linux)
+- Modo silencioso para execução em segundo plano
+- Proteção contra mover arquivos em uso
 
-------------------------------------------------------------------------
-------------------------------------------------------------------------
+---
 
-### 📂 Automatização Spotify (`spotify.py`)
+## 🛠️ Tecnologias Utilizadas
+- Python 3
+- CustomTkinter
+- Tkinter
 
-Transforma Playlsit e um arquivo Zip.
+---
 
-**Recursos:** - Este script liga-se ao teu Spotify para ler os nomes das músicas da tua playlist. Procura automaticamente essas faixas no YouTube para encontrar a melhor versão de áudio. Descarrega e converte tudo em ficheiros MP3 de alta qualidade de forma automática. No final, organiza e compacta todas as músicas num ficheiro ZIP pronto a usar.
+## 📦 Instalação
 
-------------------------------------------------------------------------
+1. Clone o repositório:
+git clone https://github.com/seu-usuario/pyautomator.git
 
-### ⚡ Conversor Python para EXE (`gerador_python_executavel.bat`)
+2. Instale as dependências:
+pip install customtkinter
 
-Ferramenta para gerar executáveis a partir de scripts Python.
+3. Execute o programa:
+python main.py
 
-**Funções:** - Menu interativo. - Escolha entre modo Terminal ou Janela
-Invisível. - Verifica e instala Python e PyInstaller automaticamente. -
-Remove ficheiros temporários após a compilação.
+---
 
-------------------------------------------------------------------------
+## 🪟 Compatibilidade
+- Windows
+- Linux
+- macOS (não testado)
 
-## ⚙️ Requisitos
+---
 
--   Windows 10 ou 11
--   Python 3.x (o conversor instala se necessário)
+## 👨‍💻 Autor
+Projeto desenvolvido por Seu Nome Aqui  
+Estudante de TI
 
-------------------------------------------------------------------------
+---
 
-## 🚀 Como Usar
-
-### Limpeza e Organização
-
-1.  Executa os scripts `.py`
-2.  Na primeira execução, aceita a opção de iniciar com o Windows
-
-### Criar um Executável
-
-1.  Executa `gerador_python_executavel.bat`
-2.  Seleciona o teu script Python
-3.  Escolhe o modo de visualização
-4.  O `.exe` será criado na pasta Downloads
-
-------------------------------------------------------------------------
-
-## 📁 Estrutura do Projeto
-
-    Projeto de Automatizações/
-    ├── Limpeza de Arquivos Temporarios/
-    │   └── limpeza.py
-    ├── Organizador de Downloads/
-    │   └── organiza_downloads.py
-    └── gerador_python_executavel.bat
-
-------------------------------------------------------------------------
-
-## ⚠️ Nota de Segurança
-
-Estes scripts são destinados a uso pessoal. Para limpar pastas do
-sistema como `C:\Windows\Temp`, executa como Administrador.
-
-------------------------------------------------------------------------
-
-## 📜 Licença
-
-Projeto livre para uso educacional e pessoal.
-
-------------------------------------------------------------------------
-
-**Desenvolvido por Mayan 🚀**
+## 📄 Licença
+Uso livre para fins educacionais.

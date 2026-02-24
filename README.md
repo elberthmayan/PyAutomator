@@ -1,4 +1,4 @@
-# 🚀 PyAutomator – System Tool
+#  PyAutomator 
 
 PyAutomator é uma aplicação desktop desenvolvida em **Python** com interface moderna usando **CustomTkinter**, focada em automação e organização do sistema.
 
@@ -42,7 +42,7 @@ O objetivo do projeto é facilitar tarefas comuns do dia a dia, como:
 
 ---
 
-## 🧠 Recursos Extras
+##  Recursos Extras
 - Interface moderna estilo cyber/dark
 - Sistema de Auto Start (iniciar junto com o Windows ou Linux)
 - Modo silencioso para execução em segundo plano

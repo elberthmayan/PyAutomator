@@ -1,0 +1,37 @@
+PYAUTOMATOR - Dependências / Como instalar
+
+1) Requisitos básicos
+- Python 3.10+ (recomendado 3.11 ou 3.12)
+- Pip (vem junto com Python)
+
+2) Bibliotecas Python (pip)
+O programa usa:
+- customtkinter
+- pillow (opcional, para imagens)
+- moviepy (opcional, para vídeo/áudio)
+
+3) Tkinter (IMPORTANTE)
+- No Windows: Tkinter já vem com o Python (normalmente não precisa instalar nada).
+- No Linux: pode precisar instalar o pacote do sistema.
+
+  Debian/Ubuntu/Mint:
+    sudo apt update
+    sudo apt install python3-tk
+
+  Fedora:
+    sudo dnf install python3-tkinter
+
+  Arch:
+    sudo pacman -S tk
+
+4) Instalação automática (recomendado) /Arquivos Localizados na pasta Depedencias 
+- Windows: execute "dependencias_windows.bat"
+- Linux: execute:
+    chmod +x dependencias_linux.sh
+    ./dependencias_linux.sh
+
+5) Se der erro
+- Confirme que está rodando no mesmo Python que você usa no projeto:
+    python --version
+- Atualize o pip:
+    python -m pip install --upgrade pip
